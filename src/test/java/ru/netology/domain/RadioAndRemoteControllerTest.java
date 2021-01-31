@@ -3,17 +3,17 @@ package ru.netology.domain;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class RadioAndRemoteControllerTest {
+public class RadioAndRemoteControllerTest {
 
 	@Test
-	public void switchStationForward() {
+	public  void switchStationForward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		assertEquals(0, radioAndRemoteController.Station);
+		assertEquals(6, radioAndRemoteController.getStation());
+	}
+	@Test
+	public  void switchStationBack() {
+		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+		assertEquals(4, radioAndRemoteController.getStation());
 	}
 
-	@Test
-	public void switchStationBack() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		assertEquals(9, radioAndRemoteController.Station);
-	}
 }

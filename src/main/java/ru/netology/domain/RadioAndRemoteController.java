@@ -1,26 +1,27 @@
 package ru.netology.domain;
 
 public class RadioAndRemoteController {
-	int Station;
+	private int station = 5;
 
-	public void switchStationForward(int Station) {
-
-		if (Station == 9) {
+	public void switchStationForward() {
+		if (station == 9) {
 			setStation(0);
 			return;
 		}
-		setStation(Station + 1);
+		setStation(station + 1);
 	}
-
-	public void switchStationBack(int Station) {
-
-		if (Station == 0) {
+	public void switchStationBack() {
+		if (station == 0) {
 			setStation(9);
 			return;
 		}
-		setStation(Station - 1);
+		setStation(station - 1);
 	}
 
-	private void setStation(int i) {
+	public int getStation() {
+		return station;
+	}
+	public void setStation(int station) {
+		this.station = station;
 	}
 }
