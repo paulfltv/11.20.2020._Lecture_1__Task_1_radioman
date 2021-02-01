@@ -9,137 +9,137 @@ public class RadioAndRemoteControllerTest {
 	@Test
 	public void switchStation0Forward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation0Forward();
+		radioAndRemoteController.switchStationsForward();
 		assertEquals(1, radioAndRemoteController.getCurrentStation());
 	}
 
 	@Test
 	public void switchStation1Forward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation1Forward();
+		radioAndRemoteController.switchStationsForward();
 		assertEquals(2, radioAndRemoteController.getCurrentStation());
 	}
 
 	@Test
 	public void switchStation2Forward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation2Forward();
+		radioAndRemoteController.switchStationsForward();
 		assertEquals(3, radioAndRemoteController.getCurrentStation());
 	}
 
 	@Test
 	public void switchStation3Forward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation3Forward();
+		radioAndRemoteController.switchStationsForward();
 		assertEquals(4, radioAndRemoteController.getCurrentStation());
 	}
 
 	@Test
 	public void switchStation4Forward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation4Forward();
+		radioAndRemoteController.switchStationsForward();
 		assertEquals(5, radioAndRemoteController.getCurrentStation());
 	}
 
 	@Test
 	public void switchStation5Forward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation5Forward();
+		radioAndRemoteController.switchStationsForward();
 		assertEquals(6, radioAndRemoteController.getCurrentStation());
 	}
 
 	@Test
 	public void switchStation6Forward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation6Forward();
+		radioAndRemoteController.switchStationsForward();
 		assertEquals(7, radioAndRemoteController.getCurrentStation());
 	}
 
 	@Test
 	public void switchStation7Forward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation7Forward();
+		radioAndRemoteController.switchStationsForward();
 		assertEquals(8, radioAndRemoteController.getCurrentStation());
 	}
 
 	@Test
 	public void switchStation8Forward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation8Forward();
+		radioAndRemoteController.switchStationsForward();
 		assertEquals(9, radioAndRemoteController.getCurrentStation());
 	}
 
 	@Test
 	public void switchStation9Forward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation9Forward();
+		radioAndRemoteController.switchStationsForward();
 		assertEquals(0, radioAndRemoteController.getCurrentStation());
 	}
 
 
-	@Test
-	public void switchStation0Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation0Back();
-		assertEquals(9, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation1Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation1Back();
-		assertEquals(0, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation2Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation2Back();
-		assertEquals(1, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation3Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation3Back();
-		assertEquals(2, radioAndRemoteController.getCurrentStation());
-	}
-	@Test
-	public void switchStation4Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation4Back();
-		assertEquals(3, radioAndRemoteController.getCurrentStation());
-	}
-	@Test
-	public void switchStation5Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation5Back();
-		assertEquals(4, radioAndRemoteController.getCurrentStation());
-	}
-	@Test
-	public void switchStation6Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation6Back();
-		assertEquals(5, radioAndRemoteController.getCurrentStation());
-	}
-	@Test
-	public void switchStation7Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation7Back();
-		assertEquals(6, radioAndRemoteController.getCurrentStation());
-	}
-	@Test
-	public void switchStation8Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation8Back();
-		assertEquals(7, radioAndRemoteController.getCurrentStation());
-	}
-	@Test
-	public void switchStation9Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStation9Back();
-		assertEquals(8, radioAndRemoteController.getCurrentStation());
-	}
+//	@Test
+//	public void switchStation0Back() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.switchStation0Back();
+//		assertEquals(9, radioAndRemoteController.getCurrentStation());
+//	}
+//
+//	@Test
+//	public void switchStation1Back() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.switchStation1Back();
+//		assertEquals(0, radioAndRemoteController.getCurrentStation());
+//	}
+//
+//	@Test
+//	public void switchStation2Back() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.switchStation2Back();
+//		assertEquals(1, radioAndRemoteController.getCurrentStation());
+//	}
+//
+//	@Test
+//	public void switchStation3Back() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.switchStation3Back();
+//		assertEquals(2, radioAndRemoteController.getCurrentStation());
+//	}
+//	@Test
+//	public void switchStation4Back() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.switchStation4Back();
+//		assertEquals(3, radioAndRemoteController.getCurrentStation());
+//	}
+//	@Test
+//	public void switchStation5Back() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.switchStation5Back();
+//		assertEquals(4, radioAndRemoteController.getCurrentStation());
+//	}
+//	@Test
+//	public void switchStation6Back() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.switchStation6Back();
+//		assertEquals(5, radioAndRemoteController.getCurrentStation());
+//	}
+//	@Test
+//	public void switchStation7Back() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.switchStation7Back();
+//		assertEquals(6, radioAndRemoteController.getCurrentStation());
+//	}
+//	@Test
+//	public void switchStation8Back() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.switchStation8Back();
+//		assertEquals(7, radioAndRemoteController.getCurrentStation());
+//	}
+//	@Test
+//	public void switchStation9Back() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.switchStation9Back();
+//		assertEquals(8, radioAndRemoteController.getCurrentStation());
+//	}
 
 
 	@Test

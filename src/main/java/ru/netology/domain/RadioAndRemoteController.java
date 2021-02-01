@@ -2,172 +2,144 @@ package ru.netology.domain;
 
 public class RadioAndRemoteController {
 	private int currentStation;
-	private int firstStation = 0;
-	private int lastStation = 9;
 	private int currentSound;
 	private int minSound = 0;
 	private int maxSound = 10;
 
-	public void switchStation0Forward() {
+	public void switchStationsForward() {
+
 		if (currentStation == 0) {
 			setCurrentStation(1);
 			return;
 		}
-		setCurrentStation(firstStation + 1);
-	}
-
-	public void switchStation1Forward() {
+		setCurrentStation(currentStation + 1);
 		if (currentStation == 1) {
 			setCurrentStation(2);
 			return;
 		}
-		setCurrentStation(firstStation + 2);
-	}
-
-	public void switchStation2Forward() {
+		setCurrentStation(currentStation + 1);
 		if (currentStation == 2) {
 			setCurrentStation(3);
 			return;
 		}
-		setCurrentStation(firstStation + 3);
-	}
-
-	public void switchStation3Forward() {
+		setCurrentStation(currentStation + 1);
 		if (currentStation == 3) {
 			setCurrentStation(4);
 			return;
 		}
-		setCurrentStation(firstStation + 4);
-	}
-
-	public void switchStation4Forward() {
+		setCurrentStation(currentStation + 1);
 		if (currentStation == 4) {
 			setCurrentStation(5);
 			return;
 		}
-		setCurrentStation(firstStation + 5);
-	}
-
-	public void switchStation5Forward() {
+		setCurrentStation(currentStation + 1);
 		if (currentStation == 5) {
 			setCurrentStation(6);
 			return;
 		}
-		setCurrentStation(firstStation + 6);
-	}
-
-	public void switchStation6Forward() {
+		setCurrentStation(currentStation + 1);
 		if (currentStation == 6) {
 			setCurrentStation(7);
 			return;
 		}
-		setCurrentStation(firstStation + 7);
-	}
-
-	public void switchStation7Forward() {
+		setCurrentStation(currentStation + 1);
 		if (currentStation == 7) {
 			setCurrentStation(8);
 			return;
 		}
-		setCurrentStation(firstStation + 8);
-	}
-
-	public void switchStation8Forward() {
+		setCurrentStation(currentStation + 1);
 		if (currentStation == 8) {
 			setCurrentStation(9);
 			return;
 		}
-		setCurrentStation(firstStation + 9);
-	}
-
-	public void switchStation9Forward() {
+		setCurrentStation(currentStation + 1);
 		if (currentStation == 9) {
 			setCurrentStation(0);
 			return;
 		}
-		setCurrentStation(firstStation);
+		setCurrentStation(0);
 	}
 
 
-	public void switchStation0Back() {
-		if (currentStation == 0) {
-			setCurrentStation(9);
-			return;
-		}
-		setCurrentStation(lastStation - 9);
-	}
-
-	public void switchStation1Back() {
-		if (currentStation == 1) {
-			setCurrentStation(0);
-			return;
-		}
-		setCurrentStation(lastStation - 9);
-	}
-
-	public void switchStation2Back() {
-		if (currentStation == 2) {
-			setCurrentStation(1);
-			return;
-		}
-		setCurrentStation(lastStation - 8);
-	}
-
-	public void switchStation3Back() {
-		if (currentStation == 3) {
-			setCurrentStation(2);
-			return;
-		}
-		setCurrentStation(lastStation - 7);
-	}
-
-	public void switchStation4Back() {
-		if (currentStation == 4) {
-			setCurrentStation(3);
-			return;
-		}
-		setCurrentStation(lastStation - 6);
-	}
-
-	public void switchStation5Back() {
-		if (currentStation == 5) {
-			setCurrentStation(4);
-			return;
-		}
-		setCurrentStation(lastStation - 5);
-	}
-
-	public void switchStation6Back() {
-		if (currentStation == 6) {
-			setCurrentStation(5);
-			return;
-		}
-		setCurrentStation(lastStation - 4);
-	}
-
-	public void switchStation7Back() {
-		if (currentStation == 7) {
-			setCurrentStation(6);
-			return;
-		}
-		setCurrentStation(lastStation - 3);
-	}
-
-	public void switchStation8Back() {
-		if (currentStation == 8) {
-			setCurrentStation(7);
-			return;
-		}
-		setCurrentStation(lastStation - 2);
-	}
-
-	public void switchStation9Back() {
-		if (currentStation == 9) {
-			setCurrentStation(8);
-			return;
-		}
-		setCurrentStation(lastStation - 1);
-	}
+//	public void switchStation0Back() {
+//		if (currentStation == 0) {
+//			setCurrentStation(9);
+//			return;
+//		}
+//		setCurrentStation(lastStation - 9);
+//	}
+//
+//	public void switchStation1Back() {
+//		if (currentStation == 1) {
+//			setCurrentStation(0);
+//			return;
+//		}
+//		setCurrentStation(lastStation - 9);
+//	}
+//
+//	public void switchStation2Back() {
+//		if (currentStation == 2) {
+//			setCurrentStation(1);
+//			return;
+//		}
+//		setCurrentStation(lastStation - 8);
+//	}
+//
+//	public void switchStation3Back() {
+//		if (currentStation == 3) {
+//			setCurrentStation(2);
+//			return;
+//		}
+//		setCurrentStation(lastStation - 7);
+//	}
+//
+//	public void switchStation4Back() {
+//		if (currentStation == 4) {
+//			setCurrentStation(3);
+//			return;
+//		}
+//		setCurrentStation(lastStation - 6);
+//	}
+//
+//	public void switchStation5Back() {
+//		if (currentStation == 5) {
+//			setCurrentStation(4);
+//			return;
+//		}
+//		setCurrentStation(lastStation - 5);
+//	}
+//
+//	public void switchStation6Back() {
+//		if (currentStation == 6) {
+//			setCurrentStation(5);
+//			return;
+//		}
+//		setCurrentStation(lastStation - 4);
+//	}
+//
+//	public void switchStation7Back() {
+//		if (currentStation == 7) {
+//			setCurrentStation(6);
+//			return;
+//		}
+//		setCurrentStation(lastStation - 3);
+//	}
+//
+//	public void switchStation8Back() {
+//		if (currentStation == 8) {
+//			setCurrentStation(7);
+//			return;
+//		}
+//		setCurrentStation(lastStation - 2);
+//	}
+//
+//	public void switchStation9Back() {
+//		if (currentStation == 9) {
+//			setCurrentStation(8);
+//			return;
+//		}
+//		setCurrentStation(lastStation - 1);
+//	}
 
 
 	public void makeMinSoundLouder() {
@@ -321,18 +293,18 @@ public class RadioAndRemoteController {
 	public void setCurrentStation(int currentStation) {
 		this.currentStation = currentStation;
 	}
-	public int getFirstStation() {
-		return firstStation;
-	}
-	public void setFirstStation(int firstStation) {
-		this.firstStation = firstStation;
-	}
-	public int getLastStation() {
-		return lastStation;
-	}
-	public void setLastStation(int lastStation) {
-		this.lastStation = lastStation;
-	}
+//	public int getFirstStation() {
+//		return firstStation;
+//	}
+//	public void setFirstStation(int firstStation) {
+//		this.firstStation = firstStation;
+//	}
+//	public int getLastStation() {
+//		return lastStation;
+//	}
+//	public void setLastStation(int lastStation) {
+//		this.lastStation = lastStation;
+//	}
 
 	public int getCurrentSound() {
 		return currentSound;
