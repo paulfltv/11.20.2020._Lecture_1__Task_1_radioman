@@ -3,18 +3,26 @@ package ru.netology.domain;
 public class RadioAndRemoteController {
 	private int currentStation;
 	private int currentSound;
+	private int maxSound = 10;
+	private int minSound = 0;
 
+	public int getMaxSound() {
+		return maxSound;
+	}
+	public void setMaxSound(int maxSound) {
+		this.maxSound = maxSound;
+	}
+	public int getMinSound() {
+		return minSound;
+	}
+	public void setMinSound(int minSound) {
+		this.minSound = minSound;
+	}
 	public int getCurrentStation() {
 		return currentStation;
 	}
-
-
 	public int getCurrentSound() {
 		return currentSound;
-	}
-
-	public void setCurrentSound(int currentSound) {
-		this.currentSound = currentSound;
 	}
 
 	public void switchStationsForward() {
@@ -43,10 +51,10 @@ public class RadioAndRemoteController {
 		}
 		this.currentStation = currentStation;
 	}
-
+//
 //
 //		public void makeCurrentSoundLouder () {
-//			if (currentSound == 10) {
+//			if (currentSound == 9) {
 //				setCurrentSound(10);
 //				return;
 //			}
@@ -54,9 +62,20 @@ public class RadioAndRemoteController {
 //		}
 //
 //		public void makeCurrentSoundDown() {
-//			if (currentSound == 0) {
+//			if (currentSound == 1) {
 //				setCurrentSound(0);
 //				return;
 //			}
 //			setCurrentSound(currentSound - 1);
+//		}
+
+	public void setCurrentSound() {
+		if (currentSound > maxSound) {
+			return;
+		}
+		if (currentSound < minSound) {
+			return;
+		}
+		this.currentSound = currentSound;
+	}
 }
