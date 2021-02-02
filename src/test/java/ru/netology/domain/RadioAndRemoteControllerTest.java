@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class RadioAndRemoteControllerTest {
 
 	@Test
-	public void switchCurrentStation8Forward() {
+	public void switchCurrentStationForward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
 		radioAndRemoteController.switchStationsForward();
 		assertEquals(9, radioAndRemoteController.getCurrentStation());
@@ -29,7 +29,7 @@ public class RadioAndRemoteControllerTest {
 	}
 
 	@Test
-	public void switchStation1Back() {
+	public void switchCurrentStationBack() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
 		radioAndRemoteController.switchStationsBack();
 		assertEquals(0, radioAndRemoteController.getCurrentStation());
