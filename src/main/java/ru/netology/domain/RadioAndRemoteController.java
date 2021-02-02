@@ -8,9 +8,6 @@ public class RadioAndRemoteController {
 		return currentStation;
 	}
 
-	public void setCurrentStation(int currentStation) {
-		this.currentStation = currentStation;
-	}
 
 	public int getCurrentSound() {
 		return currentSound;
@@ -37,27 +34,27 @@ public class RadioAndRemoteController {
 		setCurrentStation(currentStation - 1);
 	}
 
-	public void putStation() {
-		if (currentStation < 9) {
-			setCurrentSound(currentSound + 1);
-			setCurrentSound(currentSound - 1);
+	public void setCurrentStation(int currentStation) {
+		if (currentStation == 5) {
+			setCurrentStation(5);
+			return;
 		}
+		this.currentStation = currentStation;
 	}
 
-		public void makeCurrentSoundLouder () {
-			if (currentSound == 10) {
-				setCurrentSound(10);
-				return;
-			}
-			setCurrentSound(currentSound + 1);
-		}
-		public void makeCurrentSoundDown () {
-			if (currentSound == 0) {
-				setCurrentSound(0);
-				return;
-			}
-			setCurrentSound(currentSound - 1);
-		}
-		public void putSound () {
-
-	}
+//
+//		public void makeCurrentSoundLouder () {
+//			if (currentSound == 10) {
+//				setCurrentSound(10);
+//				return;
+//			}
+//			setCurrentSound(currentSound + 1);
+//		}
+//
+//		public void makeCurrentSoundDown() {
+//			if (currentSound == 0) {
+//				setCurrentSound(0);
+//				return;
+//			}
+//			setCurrentSound(currentSound - 1);
+}

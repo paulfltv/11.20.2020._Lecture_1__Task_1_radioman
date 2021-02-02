@@ -7,70 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class RadioAndRemoteControllerTest {
 
 	@Test
-	public void switchStation0Forward() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsForward();
-		assertEquals(1, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation1Forward() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsForward();
-		assertEquals(2, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation2Forward() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsForward();
-		assertEquals(3, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation3Forward() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsForward();
-		assertEquals(4, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation4Forward() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsForward();
-		assertEquals(5, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation5Forward() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsForward();
-		assertEquals(6, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation6Forward() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsForward();
-		assertEquals(7, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation7Forward() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsForward();
-		assertEquals(8, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation8Forward() {
+	public void switchCurrentStation8Forward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
 		radioAndRemoteController.switchStationsForward();
 		assertEquals(9, radioAndRemoteController.getCurrentStation());
 	}
 
 	@Test
-	public void switchStation9Forward() {
+	public void switchCurrentStation9Forward() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
 		radioAndRemoteController.switchStationsForward();
 		assertEquals(0, radioAndRemoteController.getCurrentStation());
@@ -78,7 +22,7 @@ public class RadioAndRemoteControllerTest {
 
 
 	@Test
-	public void switchStation0Back() {
+	public void switchCurrentStation0Back() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
 		radioAndRemoteController.switchStationsBack();
 		assertEquals(9, radioAndRemoteController.getCurrentStation());
@@ -92,213 +36,173 @@ public class RadioAndRemoteControllerTest {
 	}
 
 	@Test
-	public void switchStation2Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsBack();
-		assertEquals(1, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation3Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsBack();
-		assertEquals(2, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation4Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsBack();
-		assertEquals(3, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation5Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsBack();
-		assertEquals(4, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation6Back() {
+	public void switchStation5() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
 		radioAndRemoteController.switchStationsBack();
 		assertEquals(5, radioAndRemoteController.getCurrentStation());
 	}
 
 	@Test
-	public void switchStation7Back() {
+	public void switchStation10() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
 		radioAndRemoteController.switchStationsBack();
-		assertEquals(6, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation8Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsBack();
-		assertEquals(7, radioAndRemoteController.getCurrentStation());
-	}
-
-	@Test
-	public void switchStation9Back() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.switchStationsBack();
-		assertEquals(8, radioAndRemoteController.getCurrentStation());
-	}
-
-
-	@Test
-	public void makeMinSoundLouder() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundLouder();
-		assertEquals(1, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound1Louder() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundLouder();
-		assertEquals(2, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound2Louder() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundLouder();
-		assertEquals(3, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound3Louder() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundLouder();
-		assertEquals(4, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound4Louder() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundLouder();
-		assertEquals(5, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound5Louder() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundLouder();
-		assertEquals(6, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound6Louder() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundLouder();
-		assertEquals(7, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound7Louder() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundLouder();
-		assertEquals(8, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound8Louder() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundLouder();
-		assertEquals(9, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound9Louder() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundLouder();
-		assertEquals(10, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeMaxSoundLouder() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundLouder();
-		assertEquals(10, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeMaxSoundDown() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundDown();
-		assertEquals(9, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound9Down() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundDown();
-		assertEquals(8, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound8Down() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundDown();
-		assertEquals(7, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound7Down() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundDown();
-		assertEquals(6, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound6Down() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundDown();
-		assertEquals(5, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound5Down() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundDown();
-		assertEquals(4, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound4Down() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundDown();
-		assertEquals(3, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound3Down() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundDown();
-		assertEquals(2, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound2Down() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundDown();
-		assertEquals(1, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeCurrentSound1Down() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundDown();
-		assertEquals(0, radioAndRemoteController.getCurrentSound());
-	}
-
-	@Test
-	public void makeMinSoundDown() {
-		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.makeCurrentSoundDown();
-		assertEquals(0, radioAndRemoteController.getCurrentSound());
+		assertEquals(9, radioAndRemoteController.getCurrentStation());
 	}
 }
+//
+//
+//
+//	@Test
+//	public void makeMinSoundLouder() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundLouder();
+//		assertEquals(1, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound1Louder() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundLouder();
+//		assertEquals(2, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound2Louder() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundLouder();
+//		assertEquals(3, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound3Louder() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundLouder();
+//		assertEquals(4, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound4Louder() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundLouder();
+//		assertEquals(5, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound5Louder() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundLouder();
+//		assertEquals(6, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound6Louder() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundLouder();
+//		assertEquals(7, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound7Louder() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundLouder();
+//		assertEquals(8, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound8Louder() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundLouder();
+//		assertEquals(9, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound9Louder() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundLouder();
+//		assertEquals(10, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeMaxSoundLouder() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundLouder();
+//		assertEquals(10, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeMaxSoundDown() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundDown();
+//		assertEquals(9, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound9Down() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundDown();
+//		assertEquals(8, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound8Down() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundDown();
+//		assertEquals(7, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound7Down() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundDown();
+//		assertEquals(6, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound6Down() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundDown();
+//		assertEquals(5, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound5Down() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundDown();
+//		assertEquals(4, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound4Down() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundDown();
+//		assertEquals(3, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound3Down() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundDown();
+//		assertEquals(2, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound2Down() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundDown();
+//		assertEquals(1, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeCurrentSound1Down() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundDown();
+//		assertEquals(0, radioAndRemoteController.getCurrentSound());
+//	}
+//
+//	@Test
+//	public void makeMinSoundDown() {
+//		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+//		radioAndRemoteController.makeCurrentSoundDown();
+//		assertEquals(0, radioAndRemoteController.getCurrentSound());
+//	}
+//}
