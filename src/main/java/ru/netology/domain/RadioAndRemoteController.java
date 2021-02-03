@@ -12,12 +12,14 @@ public class RadioAndRemoteController {
 	public void setMaxSound(int maxSound) {
 		this.maxSound = maxSound;
 	}
+
 	public int getMinSound() {
 		return minSound;
 	}
 	public void setMinSound(int minSound) {
 		this.minSound = minSound;
 	}
+
 	public int getCurrentStation() {
 		return currentStation;
 	}
@@ -26,7 +28,6 @@ public class RadioAndRemoteController {
 	}
 
 	public void switchStationsForward() {
-
 		if (currentStation == 9) {
 			setCurrentStation(0);
 			return;
@@ -51,29 +52,28 @@ public class RadioAndRemoteController {
 		}
 		this.currentStation = currentStation;
 	}
-//
-//
-//		public void makeCurrentSoundLouder () {
-//			if (currentSound == 9) {
-//				setCurrentSound(10);
-//				return;
-//			}
-//			setCurrentSound(currentSound + 1);
-//		}
-//
-//		public void makeCurrentSoundDown() {
-//			if (currentSound == 1) {
-//				setCurrentSound(0);
-//				return;
-//			}
-//			setCurrentSound(currentSound - 1);
-//		}
-
-	public void setCurrentSound() {
+	public void setCurrentSound(int currentSound) {
 		if (currentSound > maxSound) {
 			return;
 		}
 		if (currentSound < minSound) {
+			return;
+		}
+		this.currentSound = currentSound;
+	}
+
+	public void increaseCurrentSound() {
+		if (currentSound == 0) {
+			currentSound++;
+			return;
+		}
+		this.currentSound = currentSound;
+
+	}
+
+	public void decreaseCurrentSound() {
+		if (currentSound == 10) {
+			currentSound--;
 			return;
 		}
 		this.currentSound = currentSound;
