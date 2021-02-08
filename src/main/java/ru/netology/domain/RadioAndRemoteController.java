@@ -50,29 +50,32 @@ public class RadioAndRemoteController {
 	}
 
 
-		public void setCurrentSound(int currentSound){
-			if (currentSound > maxSound) {
-				this.currentSound = maxSound;
-				return;
-			}
-			if (currentSound < minSound) {
-				this.currentSound = minSound;
-				return;
-			}
-		}
+	public void setCurrentSound(int currentSound) {
+		if (currentSound > maxSound) {
+			this.currentSound = maxSound;
+			return;
 
-		public void increaseCurrentSound() {
-			if (currentSound == 0) {
-				currentSound++;
-				return;
-			}
-			this.currentSound = currentSound + 1;
 		}
-		public void decreaseCurrentSound() {
-			if (currentSound == 10) {
-				currentSound--;
-				return;
-			}
-			this.currentSound = currentSound - 1;
+		if (currentSound < minSound) {
+			this.currentSound = minSound;
+			return;
 		}
+		this.currentSound = currentSound;
 	}
+
+	public void increaseCurrentSound() {
+		if (currentSound == 0) {
+			currentSound++;
+			return;
+		}
+		this.currentSound = currentSound + 1;
+	}
+
+	public void decreaseCurrentSound() {
+		if (currentSound == 10) {
+			currentSound--;
+			return;
+		}
+		this.currentSound = currentSound - 1;
+	}
+}
