@@ -121,9 +121,15 @@ public class RadioAndRemoteControllerTest {
 	@Test
 	public void setCurrentSound1() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
-		radioAndRemoteController.setCurrentSound(0);
-		radioAndRemoteController.increaseCurrentSound();
+		radioAndRemoteController.setCurrentSound(1);
 		assertEquals(1, radioAndRemoteController.getCurrentSound());
+	}
+
+	@Test
+	public void setCurrentSound5() {
+		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
+		radioAndRemoteController.setCurrentSound(5);
+		assertEquals(5, radioAndRemoteController.getCurrentSound());
 	}
 
 	@Test

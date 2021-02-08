@@ -3,6 +3,8 @@ package ru.netology.domain;
 public class RadioAndRemoteController {
 	private int currentStation;
 	private int currentSound;
+	int maxSound = 10;
+	int minSound = 0;
 
 	public int getCurrentStation() {
 		return currentStation;
@@ -49,15 +51,14 @@ public class RadioAndRemoteController {
 
 
 		public void setCurrentSound(int currentSound){
-			int maxSound = 10;
 			if (currentSound > maxSound) {
+				this.currentSound = maxSound;
 				return;
 			}
-			int minSound = 0;
 			if (currentSound < minSound) {
+				this.currentSound = minSound;
 				return;
 			}
-			this.currentSound = currentSound;
 		}
 
 		public void increaseCurrentSound() {
