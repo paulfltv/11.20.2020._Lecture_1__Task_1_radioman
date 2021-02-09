@@ -174,6 +174,7 @@ public class RadioAndRemoteControllerTest {
 	public void increaseCurrentSound10() {
 		RadioAndRemoteController radioAndRemoteController = new RadioAndRemoteController();
 		radioAndRemoteController.setCurrentSound(10);
+		radioAndRemoteController.increaseCurrentSound();
 		assertEquals(10, radioAndRemoteController.getCurrentSound());
 	}
 
