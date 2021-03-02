@@ -1,4 +1,4 @@
-package ru.netology.domain;
+package ru.netology.domain.radioman;
 
 public class RadioAndRemoteController {
 	private int currentStation;
