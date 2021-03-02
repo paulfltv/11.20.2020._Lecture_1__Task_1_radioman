@@ -3,31 +3,11 @@ package ru.netology.domain.radiomanplus;
 class RadiomanPlus {
 
 	private int currentStation;
-	private int firstStation;
-	private int lastStation;
+	private int firstStation = 0;
+	private int lastStation = 10;
 	private int currentSound;
 	private int minSound = 0;
-	private int maxSound = 100;
-
-	public int getFirstStation() {
-		return firstStation;
-	}
-
-	public void setFirstStation(int firstStation) {
-		this.firstStation = firstStation;
-	}
-
-	public int getLastStation() {
-		return lastStation;
-	}
-
-	public void setLastStation(int lastStation) {
-		this.lastStation = lastStation;
-	}
-
-	public RadiomanPlus(int lastStation) {
-		this.lastStation = lastStation;
-	}
+	private int maxSound = 10;
 
 	public RadiomanPlus(int currentStation, int firstStation, int lastStation, int currentSound, int minSound, int maxSound) {
 		this.currentStation = currentStation;
@@ -38,7 +18,23 @@ class RadiomanPlus {
 		this.maxSound = maxSound;
 	}
 
-	public RadiomanPlus() {
+	public RadiomanPlus(int currentSound, int minSound, int maxSound) {
+		this.currentSound = currentSound;
+		this.minSound = minSound;
+		this.maxSound = maxSound;
+	}
+
+	public int getFirstStation() {
+		return firstStation;
+	}
+	public void setFirstStation(int firstStation) {
+		this.firstStation = firstStation;
+	}
+	public int getLastStation() {
+		return lastStation;
+	}
+	public void setLastStation(int lastStation) {
+		this.lastStation = lastStation;
 	}
 
 	public int getCurrentStation() {
@@ -69,7 +65,7 @@ class RadiomanPlus {
 			currentStation++;
 			return;
 		}
-		if (currentStation == 9) {
+		if (currentStation == 10) {
 			setCurrentStation(0);
 			return;
 		}
@@ -77,18 +73,18 @@ class RadiomanPlus {
 	}
 
 	public void switchStationsBack() {
-		if (currentStation == 9) {
+		if (currentStation == 10) {
 			currentStation--;
 			return;
 		}
 		if (currentStation == 0) {
-			setCurrentStation(9);
+			setCurrentStation(10);
 			return;
 		}
 		setCurrentStation(currentStation - 1);
 	}
 	public void setCurrentStation(int currentStation) {
-		if (currentStation > 9) {
+		if (currentStation > 10) {
 			return;
 		}
 		if (currentStation < 0) {
